@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="Register.js"></script>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body style="justify-items: center;padding-top: 120px; ">
+    <div class="form1">
+        <form  id="form" action="login.html" onsubmit="return (validation(local))">
+            <h1>SIGN UP</h1>
+            <div class="inputs ">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your Name" required>
+                <div class="error"></div>
+            </div>
+            <div class="inputs">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your Email" required>
+                <div class="error"></div>
+            </div>
+            <div class="inputs">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <div class="error"></div>
+            </div>
+            <div class="inputs">
+                <label for="password1">Confirm Password:</label>
+                <input type="password" id="password1" placeholder="Enter again password">
+                <div class="error"></div>
+            </div>
+            <button type="submit" value="submit">Submit</button>
+
+        </form>
+    </div>
+
+
+
+    
+
+</body>
+
+</html>

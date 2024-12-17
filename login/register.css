@@ -1,0 +1,72 @@
+    body {
+        background-image: url(https://img.freepik.com/free-photo/3d-rendering-hexagonal-texture-background_23-2150796444.jpg?uid=R157369246&ga=GA1.1.911898723.1734322225&semt=ais_hybrid);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+.form1 {
+
+    border: 3px solid rgb(9, 118, 190);
+    border-radius: 50px;
+    width: fit-content;
+    height: fit-content;
+    backdrop-filter: blur(5px);
+
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin: 30px;
+    /* text-shadow:2px 2px 0px; */
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+}
+
+.inputs {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs label {
+    color: azure;
+    font-size: 2em;
+}
+
+.inputs input {
+    height: 30px;
+    width: 400px;
+    font-size: 1em;
+    padding-left: 20px;
+    border: 3px solid rgb(10, 131, 211);
+    border-radius: 10px;
+}
+
+#form button {
+    margin: 20px;
+    margin-left: 130px;
+    height: 40px;
+    width: 200px;
+    font-size: 1em;
+    font-weight: 1000;
+    background-color: rgb(3, 3, 3);
+    color: rgb(255, 255, 255);
+    border: 4px solid rgb(10, 131, 211);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.error {
+    color: rgb(255, 0, 0);
+    padding: 5px;
+
+}
+
+.inputs.success input {
+    border-color: rgb(15, 247, 15);
+}
+
+.inputs.error input {
+    border-color: red;
+}

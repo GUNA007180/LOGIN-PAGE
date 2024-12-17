@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<style>
+    body {
+        background-image: url();
+        background-repeat: no-repeat;
+        background-size: cover;
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(99,120,185,1) 100%);
+        position: relative;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 2em;
+        list-style: none;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: rgb(248, 248, 248);
+        font-weight: 1000;
+        padding-right: 60px;
+
+    }
+
+    .name {
+     
+        position: relative;
+        height: 400px;
+        width: 500px;
+        border: 3px solid rgb(255, 255, 255);
+        border-radius: 20px;
+        margin-left: 600px;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+</style>
+
+<body>
+
+
+    <div class="nav">
+        <ul>
+            <li> <a href="http://127.0.0.1:5500/login/Register.html">Sign up</a></li>
+            <li> <a href="http://127.0.0.1:5500/login/login.html?">Login</a></li>
+            <li> <a href="">Home</a></li>
+        </ul>
+    </div>
+
+    <div class="name">
+        <img src="https://cdn-icons-png.flaticon.com/128/7518/7518748.png" alt="" height="70px" width="70px" style="margin: 10px;">
+        <h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 2em;color: rgb(67, 143, 52);">
+            Successfully Login</h3>
+        <p style="font-size: 20px;color: rgb(10, 10, 10);">Welcome
+        <h1 id="result" style="font-size: 3em;color: rgb(0, 0, 0);"></h1>
+        </p>
+    </div>
+
+    </div>
+
+</body>
+<script>
+    var data = document.location.search;
+    var params = new URLSearchParams(data);
+    document.getElementById('result').innerHTML = params.get("username").toUpperCase();
+</script>
+
+</html>
+
+</html>
